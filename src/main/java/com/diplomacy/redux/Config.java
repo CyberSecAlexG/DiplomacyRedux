@@ -19,7 +19,7 @@ public class Config {
     }
 
     public static Config createDefault() {
-        return new Config(1, -1000, -50, -50);
+        return new Config(200, -1000, -50, -50);
     }
 
     public int getUNION_DIPLOMACY_COST() {
