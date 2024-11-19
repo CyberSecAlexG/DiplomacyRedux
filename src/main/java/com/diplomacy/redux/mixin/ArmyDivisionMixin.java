@@ -1,4 +1,4 @@
-package com.diplomacy.redux.mixin.menus;
+package com.diplomacy.redux.mixin;
 
 import aoh.kingdoms.history.map.army.ArmyDivision;
 import com.diplomacy.redux.ArmyDivisionExtension;

@@ -5,7 +5,8 @@
   "mixins": [
     "menus.InGameCivMixin",
     "menus.MenuManagerMixin",
-    "menus.ArmyDivisionMixin"
+    "ArmyDivisionMixin",
+    "CivilizationMixin"
   ],
   "injectors": {
     "defaultRequire": 1

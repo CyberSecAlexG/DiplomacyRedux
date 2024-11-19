@@ -1,8 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
-
 package com.diplomacy.redux;
 
 import aoh.kingdoms.history.mainGame.CFG;
@@ -33,7 +28,6 @@ import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_Hover;
 import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement;
 import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement_Type;
 import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement_Type_Button_TextBonus;
-import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement_Type_Flag;
 import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement_Type_Image;
 import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement_Type_ImageTitle;
 import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement_Type_ImageTitle_BG;
@@ -41,7 +35,6 @@ import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverEleme
 import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement_Type_Text;
 import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement_Type_TextTitle;
 import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement_Type_TextTitle_BG;
-import aoh.kingdoms.history.menu_element.menuElementHover.MenuElement_HoverElement_Type_TextTitle_BG_Center;
 import aoh.kingdoms.history.menu_element.textStatic.TextBonus;
 import aoh.kingdoms.history.menu_element.textStatic.TextIcon_Diplomacy;
 import aoh.kingdoms.history.menu_element.textStatic.Text_StaticBG;
@@ -62,7 +55,7 @@ public class InGame_Union extends Menu {
     public static int Diplomacy_Cost = DiplomacyRedux.config.getUNION_DIPLOMACY_COST();
 
     public InGame_Union(int nCivID) {
-        List<MenuElement> menuElements = new ArrayList();
+        List<MenuElement> menuElements = new ArrayList<>();
         int paddingLeft = CFG.PADDING + Images.boxTitleBORDERWIDTH;
         int titleHeight = ImageManager.getImage(Images.title600).getHeight();
         int menuWidth = ImageManager.getImage(Images.insideTop600).getWidth();
@@ -99,8 +92,8 @@ public class InGame_Union extends Menu {
         });
         menuElements.add(new ButtonStatsRectIMG_Diplomacy("" + CFG.getShortNumber(Game.getCiv(Game.player.iCivID).iRegimentsLimit), Images.regimentsLimit, statsX, buttonY + CFG.PADDING + statsH, statsW, statsH, maxIconW, 0) {
             public void buildElementHover() {
-                List<MenuElement_HoverElement> nElements = new ArrayList();
-                List<MenuElement_HoverElement_Type> nData = new ArrayList();
+                List<MenuElement_HoverElement> nElements = new ArrayList<>();
+                List<MenuElement_HoverElement_Type> nData = new ArrayList<>();
                 nData.add(new MenuElement_HoverElement_Type_TextTitle(Game.lang.get("RegimentsLimit") + ": "));
                 nData.add(new MenuElement_HoverElement_Type_TextTitle("" + Game.getCiv(Game.player.iCivID).iRegimentsLimit, CFG.FONT_BOLD, Colors.HOVER_GOLD));
                 nData.add(new MenuElement_HoverElement_Type_ImageTitle(Images.regimentsLimit, CFG.PADDING, 0));
@@ -111,8 +104,8 @@ public class InGame_Union extends Menu {
         });
         menuElements.add(new ButtonStatsRectIMG_Diplomacy("" + Game.getCiv(Game.player.iCivID).getNumOfProvinces(), Images.provinces, statsX, buttonY + (CFG.PADDING + statsH) * 2, statsW, statsH, maxIconW, 0) {
             public void buildElementHover() {
-                List<MenuElement_HoverElement> nElements = new ArrayList();
-                List<MenuElement_HoverElement_Type> nData = new ArrayList();
+                List<MenuElement_HoverElement> nElements = new ArrayList<>();
+                List<MenuElement_HoverElement_Type> nData = new ArrayList<>();
                 nData.add(new MenuElement_HoverElement_Type_TextTitle(Game.lang.get("Provinces") + ": "));
                 nData.add(new MenuElement_HoverElement_Type_TextTitle(this.getText(), CFG.FONT_BOLD, Colors.HOVER_GOLD));
                 nData.add(new MenuElement_HoverElement_Type_ImageTitle(Images.provinces, CFG.PADDING, 0));
@@ -123,8 +116,8 @@ public class InGame_Union extends Menu {
         });
         menuElements.add(new ButtonStatsRectIMG_Diplomacy_Flip("" + CFG.getShortNumber(Game.getCiv(iCivID).iRegimentsLimit), Images.regimentsLimit, statsX + CFG.PADDING + statsW, buttonY + CFG.PADDING + statsH, statsW, statsH, maxIconW, 0) {
             public void buildElementHover() {
-                List<MenuElement_HoverElement> nElements = new ArrayList();
-                List<MenuElement_HoverElement_Type> nData = new ArrayList();
+                List<MenuElement_HoverElement> nElements = new ArrayList<>();
+                List<MenuElement_HoverElement_Type> nData = new ArrayList<>();
                 nData.add(new MenuElement_HoverElement_Type_TextTitle(Game.lang.get("RegimentsLimit") + ": "));
                 nData.add(new MenuElement_HoverElement_Type_TextTitle("" + Game.getCiv(InGame_Union.iCivID).iRegimentsLimit, CFG.FONT_BOLD, Colors.HOVER_GOLD));
                 nData.add(new MenuElement_HoverElement_Type_ImageTitle(Images.regimentsLimit, CFG.PADDING, 0));
@@ -135,8 +128,8 @@ public class InGame_Union extends Menu {
         });
         menuElements.add(new ButtonStatsRectIMG_Diplomacy_Flip("" + Game.getCiv(iCivID).getNumOfProvinces(), Images.provinces, statsX + CFG.PADDING + statsW, buttonY + (CFG.PADDING + statsH) * 2, statsW, statsH, maxIconW, 0) {
             public void buildElementHover() {
-                List<MenuElement_HoverElement> nElements = new ArrayList();
-                List<MenuElement_HoverElement_Type> nData = new ArrayList();
+                List<MenuElement_HoverElement> nElements = new ArrayList<>();
+                List<MenuElement_HoverElement_Type> nData = new ArrayList<>();
                 nData.add(new MenuElement_HoverElement_Type_TextTitle(Game.lang.get("Provinces") + ": "));
                 nData.add(new MenuElement_HoverElement_Type_TextTitle(this.getText(), CFG.FONT_BOLD, Colors.HOVER_GOLD));
                 nData.add(new MenuElement_HoverElement_Type_ImageTitle(Images.provinces, CFG.PADDING, 0));
@@ -170,8 +163,8 @@ public class InGame_Union extends Menu {
 //        }); WAS EXPIRY DATE
         menuElements.add(new TextBonus(Game.lang.get("Cost") + ": ", "" + CFG.getPrecision2(Diplomacy_Cost, 100), Images.diplomacy, paddingLeft + CFG.PADDING, buttonY, (menuWidth - paddingLeft * 2 - CFG.PADDING / 2 * 2), CFG.TEXT_HEIGHT + CFG.PADDING * 5, iconWidth) {
             public void buildElementHover() {
-                List<MenuElement_HoverElement> nElements = new ArrayList();
-                List<MenuElement_HoverElement_Type> nData = new ArrayList();
+                List<MenuElement_HoverElement> nElements = new ArrayList<>();
+                List<MenuElement_HoverElement_Type> nData = new ArrayList<>();
                 nData.add(new MenuElement_HoverElement_Type_Button_TextBonus(Game.lang.get("DiplomacyPoints") + ": ", "" + CFG.getPrecision2(Diplomacy_Cost, 100), Images.diplomacy, CFG.FONT_REGULAR_SMALL, CFG.FONT_BOLD_SMALL, Colors.HOVER_LEFT, Colors.HOVER_GOLD));
                 nElements.add(new MenuElement_HoverElement(nData));
                 nData.clear();
@@ -261,8 +254,8 @@ public class InGame_Union extends Menu {
             }
 
             public void buildElementHover() {
-                List<MenuElement_HoverElement> nElements = new ArrayList();
-                List<MenuElement_HoverElement_Type> nData = new ArrayList();
+                List<MenuElement_HoverElement> nElements = new ArrayList<>();
+                List<MenuElement_HoverElement_Type> nData = new ArrayList<>();
                 nData.add(new MenuElement_HoverElement_Type_TextTitle_BG(Game.lang.get("SendProposal"), CFG.FONT_BOLD, Colors.HOVER_GOLD));
                 nData.add(new MenuElement_HoverElement_Type_ImageTitle_BG(Images.alliance, CFG.PADDING, 0));
                 nElements.add(new MenuElement_HoverElement(nData));
@@ -323,8 +316,8 @@ public class InGame_Union extends Menu {
     }
 
     public static MenuElement_Hover getHover() {
-        List<MenuElement_HoverElement> nElements = new ArrayList();
-        List<MenuElement_HoverElement_Type> nData = new ArrayList();
+        List<MenuElement_HoverElement> nElements = new ArrayList<>();
+        List<MenuElement_HoverElement_Type> nData = new ArrayList<>();
         int score = DiplomacyManagerExtension.getUnion_Score(Game.player.iCivID, iCivID);
 //        nData.add(new MenuElement_HoverElement_Type_TextTitle_BG_Center(Game.lang.get("Alliance"), CFG.FONT_BOLD, Colors.HOVER_GOLD));
 //        nElements.add(new MenuElement_HoverElement(nData));

@@ -2,7 +2,6 @@ package com.diplomacy.redux;
 
 import aoh.kingdoms.history.mainGame.Game;
 import aoh.kingdoms.history.mainGame.GameValues;
-import aoh.kingdoms.history.mainGame.Renderer.RendererGame;
 import aoh.kingdoms.history.map.army.ArmyDivision;
 import aoh.kingdoms.history.map.civilization.Civilization;
 import aoh.kingdoms.history.map.diplomacy.DiplomacyManager;
@@ -157,7 +156,7 @@ public class DiplomacyManagerExtension {
         return (int) score;
     }
 
-    public static final float getUnion_Score_BASE_VALUE(int civFrom, int civTo) {
+    public static float getUnion_Score_BASE_VALUE(int civFrom, int civTo) {
         return DiplomacyRedux.config.getUNION_SCORE_BASE_VALUE() * Math.max(GameValues.diplomacy.ALLIANCE_SCORE_BASE_RANK_SCORE_MIN, Math.min(GameValues.diplomacy.ALLIANCE_SCORE_BASE_RANK_SCORE_MAX, Game.getCiv(civTo).iCivRankScore / Game.getCiv(civFrom).iCivRankScore));
     }
 
@@ -185,9 +184,5 @@ public class DiplomacyManagerExtension {
             prov.setCivID(newCivID.getCivID());
             Game.player.fog.updateFogOfWar_All(province);
         }
-    }
-
-    public static boolean canCreateUnion(int iCivA, int iCivB) {
-        return isAlly(iCivA, iCivB);
     }
 }
