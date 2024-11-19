@@ -13,6 +13,9 @@ Features that are WIP:
 * Offer Vassalisation
 * Create custom vassals from your own provinces
 
+For more information regarding the mod please visit the discord:
+https://discord.gg/4UReH6aQZm
+
 # How to use Diplomacy Redux
 Install the [AOH3 Fabric Loader](https://github.com/MushroomMif/aoh3-fabric-loader)
 and [AOH3 Fabric API](https://github.com/MushroomMif/aoh3-fabric-api)
