@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.diplomacy.redux.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "menus.InGameCivMixin",
+    "menus.MenuManagerMixin",
+    "menus.ArmyDivisionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

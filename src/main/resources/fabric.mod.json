@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "1.0",
-  "name": "Example mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "id": "drm",
+  "version": "0.1",
+  "name": "Diplomacy Redux",
+  "description": "This mod adds extra diplomacy features from AoH2 into AoH3!",
   "authors": [
-    "Me!"
+    "CreamCheese"
   ],
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.mod.ExampleMod"
+      "com.diplomacy.redux.DiplomacyRedux"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "drm.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.16.8",
