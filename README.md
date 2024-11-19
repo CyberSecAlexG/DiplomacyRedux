@@ -8,6 +8,7 @@ Features included as of latest update:
 * Unions
 
 Features that are WIP:
+* Union changes flag visually (currently, flag stays the same)
 * Support Rebels
 * Offer Vassalisation
 * Create custom vassals from your own provinces
