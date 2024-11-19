@@ -23,4 +23,4 @@ if you haven't yet and then just download `DiplomacyRedux.jar`
 from [the latest release](https://github.com/CyberSecAlexG/DiplomacyRedux/releases/latest)
 and put it to your `mods` directory.
 
-Certain values can be edited in the `Age of History 3/config/DiplomacyRedux.json` after the mod has run at least once.
+Certain values can be edited in the `Age of History 3/config/diplomacy-redux.json` after the mod has run at least once.
